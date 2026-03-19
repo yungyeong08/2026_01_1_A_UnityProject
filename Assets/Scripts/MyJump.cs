@@ -19,8 +19,9 @@ public class MyJump : MonoBehaviour
     void Update()
     {
 
-        Timer = Timer - Time.deltaTime;
+        Timer = Timer + Time.deltaTime;
         timeUI.text = Timer.ToString();
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             power = power + Random.Range(-100, 200);
